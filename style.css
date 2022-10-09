@@ -13,6 +13,12 @@ body{
 a{
     text-decoration: none;
 }
+nav a{
+    color: var(--fondo);
+}
+nav a:visited{
+    color: var(--fondo);
+}
 h1{
     color:var(--gris-claro);
     font-size: 3.2rem;
@@ -36,6 +42,7 @@ nav{
     background-color: var(--crema);
     padding: 1rem;
     border-radius: 10%;
+    filter: drop-shadow(.2rem .2rem var(--verde-oscuro));
 }
 
 .hero{
@@ -51,4 +58,7 @@ nav{
     background-color: var(--gris-oscuro);
     padding: 0 2rem;
     margin: 0;
+}
+.card-section{
+    display: flex;
 }
