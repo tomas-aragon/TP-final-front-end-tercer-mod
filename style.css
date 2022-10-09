@@ -8,10 +8,25 @@
 body{
 
     background-color: var(--fondo);
+    font-family: 'Montserrat', sans-serif; 
+}
+a{
+    text-decoration: none;
 }
 nav{
     display:flex;
     justify-content: space-between;
+}
+
+.right{
+    
+    display:flex;
+    gap: 1rem;
+}
+.btn{
+    background-color: var(--crema);
+    padding: 1rem;
+    border-radius: 10%;
 }
 
 .hero{
