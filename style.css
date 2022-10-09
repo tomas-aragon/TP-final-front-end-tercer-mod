@@ -62,3 +62,33 @@ nav{
 .card-section{
     display: flex;
 }
+.green-btn{
+    background-color: var(--fondo);
+    border-radius: 10%;
+    filter: drop-shadow(.2rem .2rem var(--verde-oscuro));
+    width: fit-content;
+    padding: 1rem 1rem;
+}
+
+.card{
+    background-color: var(--crema);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    border: .3rem solid var(--verde-oscuro);
+
+}
+.card a{
+    color: var(--crema);
+}
+.card img{
+    width: 100%;
+}
+.card p{
+    text-align: center;
+}
+.contenido{
+    text-align: center;
+}
