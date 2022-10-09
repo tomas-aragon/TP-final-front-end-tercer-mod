@@ -15,10 +15,16 @@ a{
 }
 h1{
     color:var(--gris-claro);
+    font-size: 3.2rem;
+    filter: drop-shadow(.3rem .3rem black);
 }
 nav{
     display:flex;
     justify-content: space-between;
+    align-items:center;
+    padding: 1rem 0;
+
+
 }
 
 .right{
@@ -42,6 +48,7 @@ nav{
     justify-content:center;
 }
 .grey-bg{
-    background-color: red;
-    width: 10rem;
+    background-color: var(--gris-oscuro);
+    padding: 0 2rem;
+    margin: 0;
 }
