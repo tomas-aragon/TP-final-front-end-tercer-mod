@@ -1,3 +1,19 @@
+:root{
+    --fondo: #427E80;
+    --crema: #F0F5E4;
+    --gris-oscuro:#2D2D2D;
+    --gris-claro:#eeeeee;
+    --verde-oscuro:#154454;
+}
+body{
+
+    background-color: var(--fondo);
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
 .hero{
 
     background-image: url(./imagenes/codigo.jpeg);
