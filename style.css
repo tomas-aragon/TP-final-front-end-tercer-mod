@@ -92,3 +92,26 @@ nav{
 .contenido{
     text-align: center;
 }
+.svg-graphic{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    
+}
+
+.pc{
+    animation-name: trans;
+    animation-duration: 2s;
+}
+@keyframes trans {
+   from{fill: #3f6797;
+    transform: translateY(-10px);
+}
+   to {fill: #b1d5e4;
+    transform: translateY(0px);
+}
+  }
+
+.right > a:active{
+    transform: translate(3px,3px);
+}
