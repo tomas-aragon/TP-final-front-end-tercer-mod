@@ -131,8 +131,8 @@ nav{
     align-items: center;
 }
 .rompe-casilla{
-    width: 290px;
-    height:450px; 
+    width: 270px;
+    height:512px; 
     border: 2px solid black;
 }
 .rompecabezas > h2{
@@ -146,4 +146,5 @@ nav{
 }
 .rompecabezas > .btn{
 padding: 1rem 3.9rem;
+margin: 2rem 0
 }

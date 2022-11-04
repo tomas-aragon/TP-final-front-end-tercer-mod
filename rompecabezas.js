@@ -1,5 +1,5 @@
 let pieza = document.getElementsByClassName('rompe-imagen')
-let destino = document.getElementsByClassName('container-one')
+let destino = document.getElementsByClassName('rompe-casilla')
 let miIDOrigen;
 let miIDDestino;
 let miSrc;
@@ -10,6 +10,8 @@ for (i = 0; i < pieza.length; i++){
     evento.dataTransfer.setData('URL', evento.target.src);
 
     miIDOrigen = evento.target.id;
+
+    casilleroVacio = `casillero-vacio-${miIDOrigen}`;
 
     console.log(evento);
     })
@@ -31,7 +33,7 @@ for (i = 0; i < destino.length; i++){
     miSrc = evento.dataTransfer.getData('URL');
 
     miIDDestino = evento.target.id
-    
-
+    document.getElementById(miIDDestino).innerHTML = `<img src=${miSrc} alt="una pieza del rompecabezas" id="${miIDOrigen}">`
+    document.getElementById(casilleroVacio).innerHTML = ' '
 })
 }
