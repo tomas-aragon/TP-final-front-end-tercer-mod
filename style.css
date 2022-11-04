@@ -43,6 +43,7 @@ nav{
     padding: 1rem;
     border-radius: 10%;
     filter: drop-shadow(.2rem .2rem var(--verde-oscuro));
+    margin: 0 2rem;
 }
 
 .hero{
@@ -50,6 +51,7 @@ nav{
     background-image: url(./imagenes/codigo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 65vh;
     display: flex;
@@ -92,7 +94,7 @@ nav{
     text-align: center;
 }
 .contenido{
-    text-align: center;
+    padding: 0 auto;
 }
 .svg-graphic{
     position: absolute;

@@ -5,6 +5,8 @@ let miIDDestino;
 let miSrc;
 let casilleroVacio;
 
+let intArr = [3,1,2];
+
 let ORDEN = [];
 let gameOver = false;
 
@@ -42,7 +44,6 @@ for (i = 0; i < destino.length; i++){
     document.getElementById(casilleroVacio).innerHTML = ' '
 })
 }
-let intArr = [3,1,2];
 
 
 
