@@ -1,17 +1,31 @@
 let pieza = document.getElementsByClassName('rompe-imagen')
-let piezaAgarrada;
-let destino = document.getElementsByClassName('rompe-casilla')
-let casillaElegida;
+let destino = document.getElementsByClassName('container-one')
+let miIDOrigen;
+let miIDDestino;
+let misrc;
 
-pieza[0].addEventListener('dragstart', ()=>{
-    console.log('arrastrando')
-})
+for (i = 0; i < pieza.length; i++){
+    pieza[i].addEventListener('dragstart', (evento)=>{
+    miIDOrigen = evento.target.id;
+    misrc = evento.target.src;
+    console.log(evento);
+    })
+}
+for (i = 0; i < pieza.length; i++){
+    pieza[i].addEventListener('dragend', (evento)=>{
+        console.log(evento)
 
-pieza[0].addEventListener('dragend', ()=>{
-    console.log('soltado')
-})
+    })
+}
 
-
-destino[0].addEventListener('drop', ()=>{
-    console.log('soltado sobre el destino')
-})
+for (i = 0; i < destino.length; i++){
+    destino[i].addEventListener("dragover", (evento)=>{
+    evento.preventDefault();
+    })
+}
+for (i = 0; i < destino.length; i++){
+    destino[i].addEventListener("drop", (evento)=>{
+    miIDDestino = evento.target.id
+    console.log(evento)
+    })
+}

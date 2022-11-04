@@ -48,6 +48,8 @@ nav{
 .hero{
 
     background-image: url(./imagenes/codigo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 65vh;
     display: flex;
