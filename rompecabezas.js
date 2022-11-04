@@ -2,12 +2,15 @@ let pieza = document.getElementsByClassName('rompe-imagen')
 let destino = document.getElementsByClassName('container-one')
 let miIDOrigen;
 let miIDDestino;
-let misrc;
+let miSrc;
 
 for (i = 0; i < pieza.length; i++){
     pieza[i].addEventListener('dragstart', (evento)=>{
+    
+    evento.dataTransfer.setData('URL', evento.target.src);
+
     miIDOrigen = evento.target.id;
-    misrc = evento.target.src;
+
     console.log(evento);
     })
 }
@@ -25,7 +28,10 @@ for (i = 0; i < destino.length; i++){
 }
 for (i = 0; i < destino.length; i++){
     destino[i].addEventListener("drop", (evento)=>{
+    miSrc = evento.dataTransfer.getData('URL');
+
     miIDDestino = evento.target.id
-    console.log(evento)
-    })
+    
+
+})
 }
