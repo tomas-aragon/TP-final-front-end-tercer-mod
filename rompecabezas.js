@@ -3,6 +3,10 @@ let destino = document.getElementsByClassName('rompe-casilla')
 let miIDOrigen;
 let miIDDestino;
 let miSrc;
+let casilleroVacio;
+
+let ORDEN = [];
+let gameOver = false;
 
 for (i = 0; i < pieza.length; i++){
     pieza[i].addEventListener('dragstart', (evento)=>{
@@ -33,7 +37,35 @@ for (i = 0; i < destino.length; i++){
     miSrc = evento.dataTransfer.getData('URL');
 
     miIDDestino = evento.target.id
+    console.log(miIDDestino)
     document.getElementById(miIDDestino).innerHTML = `<img src=${miSrc} alt="una pieza del rompecabezas" id="${miIDOrigen}">`
     document.getElementById(casilleroVacio).innerHTML = ' '
 })
 }
+let intArr = [3,1,2];
+
+
+
+document.getElementById('reiniciar').addEventListener('click', ()=>{
+
+    for (i = 0; i < 3; i ++){
+        document.getElementsByClassName('rompe-casilla')[i].innerHTML = ' '
+        document.getElementsByClassName('rompe-imagen')[i].innerHTML = ` <img src="./imagenes/Rompe-${intArr[i]}.png" alt="Imagen del rompecabezas">`
+    }
+})
+
+
+
+/*
+
+LOGICA DEL JUEGO NO TERMINADA
+while(!gameOver && ){
+    if ('zona-' + miIDOrigen == miIDDestino) {
+        ORDEN.push(miIDOrigen)
+    }
+    if (ORDEN == [1,2,3]){
+        gameOver = true;
+        alert('GANASTE!!!')
+    }
+}
+*/
