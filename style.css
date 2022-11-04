@@ -115,3 +115,33 @@ nav{
 .right > a:active{
     transform: translate(3px,3px);
 }
+.container-one {
+
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.container-two{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rompe-casilla{
+    width: 290px;
+    height:450px; 
+    border: 2px solid black;
+}
+.rompecabezas > h2{
+    color: var(--crema);
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+.rompecabezas{
+    text-align: center;
+}
+.rompecabezas > .btn{
+padding: 1rem 3.9rem;
+}
