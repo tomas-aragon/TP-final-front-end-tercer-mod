@@ -192,11 +192,31 @@ footer {
 #video-historia{
     width: 70%;
     height: auto;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 .section-video{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.contenedor-botonera{
+    display: flex;
+    width: 70%;
+    background-color: #2D2D2D;
+    margin-bottom: 2rem;
+}
+.botonera img{
+    margin: .5rem 1.2rem;
+}
+.botonera{
+    width: 5%;
+    height: auto;
+    background-color: #eeeeee;
+    margin:.2rem 2rem;
+    border-radius: 10%;
+}
+
+.botonera:active{
+    transform: translate(2px,2px);
 }

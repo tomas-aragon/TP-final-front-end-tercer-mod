@@ -55,11 +55,15 @@
 <section class="section-video">
     <h2 class="video-title">Un breve video para complementar lo visto</h2>
 
-    <video controls id="video-historia">
+    <video id="video-historia">
         <source src="./video/historia-Comp.mp4" type="video/mp4">
-        <source src="./video/historia-Comp.ogv" type="video/ogg">
+        <source src="./video/historia-Comp.ogv" type="video/ogv">
     Video no soportado por el navegador web.
     </video> 
+<div class="contenedor-botonera"> 
+    <div class="botonera" onclick="reproducir()"><img src="./imagenes/play.svg" alt="play"></div>
+    <div class="botonera" onclick="pausar()"><img src="./imagenes/pausa.svg" alt="pausa"></div>
+</div>
 </section>
 <footer>
     <img src="./imagenes/logo.svg" alt="">
@@ -68,7 +72,6 @@
 </footer>
 </div>
 
-<script src="./app.js"></script>
 <script src="./video-controls.js"></script>
 
 
