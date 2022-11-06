@@ -55,12 +55,13 @@ document.getElementById('reiniciar').addEventListener('click', ()=>{
     }
 })
 
+// BUENO EL ROMPECABEZA NO ME QUEDO MUY BIEN, PERO NO SE ME OCURRE COMO MEJORARLO. ABAJO TRATE DE HACER ALGO:
 
 
 /*
 
 LOGICA DEL JUEGO NO TERMINADA
-while(!gameOver && ){
+while(!gameOver){
     if ('zona-' + miIDOrigen == miIDDestino) {
         ORDEN.push(miIDOrigen)
     }

@@ -220,3 +220,9 @@ footer {
 .botonera:active{
     transform: translate(2px,2px);
 }
+#duracion{
+position:relative;
+top: 10px;
+right:10px;
+color:white;
+}

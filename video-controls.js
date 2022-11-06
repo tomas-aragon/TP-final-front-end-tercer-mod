@@ -1,9 +1,11 @@
+const video = document.getElementById('video-historia')
+
 const reproducir = ()=>{
 
-    console.log('play')
+    video.play();
 };
 
 const pausar = () =>{
 
-    console.log('pausa')
+    video.pause();
 };
