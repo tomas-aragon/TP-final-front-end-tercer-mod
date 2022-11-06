@@ -1,5 +1,5 @@
 const video = document.getElementById('video-historia')
-const duracion = video.duration()
+const duracion = video.duration
 
 document.getElementById('duracion').innerHTML = `<p>Duracion: ${duracion}</p>`
 

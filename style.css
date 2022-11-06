@@ -216,6 +216,10 @@ footer {
     background-color: #eeeeee;
     margin:.2rem 2rem;
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 2px var(--fondo));
 }
 
 .botonera:active{
